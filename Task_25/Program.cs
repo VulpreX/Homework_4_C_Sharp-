@@ -10,19 +10,6 @@
 
     return number1; 
 }
-/*буду рад если напишите подсказку как убрать "ReadInt2" ведь можно как-то сделать в одном методе*/
-int ReadInt2(string argument2)
-{
-    Console.Write($"Enter {argument2} - ");
-    int number2;
-
-    while(!int.TryParse(Console.ReadLine(), out number2))
-    {
-        System.Console.WriteLine(" You entered an invalid number, try againe!");
-    }
-
-    return number2; 
-}
 
 int Exponentiate(int number1, int number2)
 {
@@ -36,4 +23,4 @@ int Exponentiate(int number1, int number2)
     return f;    
 }
 
-System.Console.WriteLine($"Number 1 to the natural extent of number 2 = {Exponentiate((ReadInt1 ("Number1")),( ReadInt2("Number2")))}");
+System.Console.WriteLine($"Number 1 to the natural extent of number 2 = {Exponentiate((ReadInt1 ("Number1")),( ReadInt1("Number2")))}");

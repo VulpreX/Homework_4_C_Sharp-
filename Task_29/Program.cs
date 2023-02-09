@@ -1,5 +1,5 @@
 ﻿int[] array = new int[8];
-System.Console.WriteLine("enter 'a' if you want to fill in manually or enter 'b' if you want to fill in automatically");
+System.Console.WriteLine("enter 'a' if you want to fill in automatically or enter 'b' if you want to fill in manually");
 string variant = Console.ReadLine();
 switch ( variant )
 {   
