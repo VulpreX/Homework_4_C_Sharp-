@@ -9,7 +9,7 @@ switch ( variant )
 
            for ( int i=0 ;  i < digital.Length; i++)
             {
-                digital[i] = new Random().Next(0, 100001); //исскуственно ограничил 100000
+                digital[i] = new Random().Next(-100001, 100001); //исскуственно ограничил 100000
             }    
 
         } 
